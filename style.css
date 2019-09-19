@@ -1,7 +1,7 @@
 body {
-    /* height: 100%;
+    height: 100%;
     width: 100%;
-    margin: 0; */
+    margin: 0;
     background-color: #00E676;
     font-family: sans-serif;
 }
@@ -9,7 +9,7 @@ body {
     position: relative;
     height: 80vh;
     width: 25%;
-    margin-left: 30em;
+    margin-left: 1em;
     margin-top:5px;;
     /* margin-bottom: 30px;; */
     background-color: #292929;
@@ -51,8 +51,8 @@ body {
     color:slateblue;
 
 }
-@media only screen and(max-width:660px) {
+/* @media only screen and(max-width:360px) {
     #left,#right,#down,#up,#container{
         margin-left:1em;
     }
-}
+} */

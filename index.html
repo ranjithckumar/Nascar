@@ -13,66 +13,79 @@
         <title>Nascar Game</title>
       </head>
       <body>
-          <div id="score_div">
-              Score:<span id="score">0</span><button id="restart">Restart</button>
-          </div>
-          <div id="container">
-              <div id="line_1"></div>
-              <div id="line_2"></div>
-              <div id="line_3"></div>
-              <div id="car" class="car">
-                  <div class="f_glass"></div>
-                  <div class="b_glass"></div>
-                  <div class="f_light_l"></div>
-                  <div class="f_light_r"></div>
-                  <div class="f_tyre_l"></div>
-                  <div class="f_tyre_r"></div>
-                  <div class="b_tyre_l"></div>
-                  <div class="b_tyre_r"></div>
-              </div>
-              <div id="car_1" class="car">
-                    <div class="f_glass"></div>
-                    <div class="b_glass"></div>
-                    <div class="f_light_l"></div>
-                    <div class="f_light_r"></div>
-                    <div class="f_tyre_l"></div>
-                    <div class="f_tyre_r"></div>
-                    <div class="b_tyre_l"></div>
-                    <div class="b_tyre_r"></div>
-                </div>
-                <div id="car_2" class="car">
-                        <div class="f_glass"></div>
-                        <div class="b_glass"></div>
-                        <div class="f_light_l"></div>
-                        <div class="f_light_r"></div>
-                        <div class="f_tyre_l"></div>
-                        <div class="f_tyre_r"></div>
-                        <div class="b_tyre_l"></div>
-                        <div class="b_tyre_r"></div>
-                    </div>
-                    <div id="car_3" class="car">
-                            <div class="f_glass"></div>
-                            <div class="b_glass"></div>
-                            <div class="f_light_l"></div>
-                            <div class="f_light_r"></div>
-                            <div class="f_tyre_l"></div>
-                            <div class="f_tyre_r"></div>
-                            <div class="b_tyre_l"></div>
-                            <div class="b_tyre_r"></div>
-                        </div>
-          </div>
-          <!-- Arrow key for up, down, left and right -->
-          <div id="arrows">
-              <button id="up">Up</button>
-              <button id="left">Left</button>
-              <button id="right">Right</button>
-              <button id="down">Down</button>
-              
-          </div>
+       
+    <div id="help">
+      <p>Controls: Right, Left, Up & Down arrow keys.</p>
+  </div>
+  <div id="score_div">
+      Score: <span id="score">0</span>
+      High Score: <span id="high_score">0</span>
+  </div>
+  <div id="container">
+      <div id="line_1" class="line"></div>
+      <div id="line_2" class="line"></div>
+      <div id="line_3" class="line"></div>
+      <div id="car" class="car">
+          <div class="f_glass"></div>
+          <div class="b_glass"></div>
+          <div class="f_light_l"></div>
+          <div class="f_light_r"></div>
+          <div class="f_tyre_l"></div>
+          <div class="f_tyre_r"></div>
+          <div class="b_tyre_l"></div>
+          <div class="b_tyre_r"></div>
+      </div>
+      <div id="car_1" class="car">
+          <div class="f_glass"></div>
+          <div class="b_glass"></div>
+          <div class="f_light_l"></div>
+          <div class="f_light_r"></div>
+          <div class="f_tyre_l"></div>
+          <div class="f_tyre_r"></div>
+          <div class="b_tyre_l"></div>
+          <div class="b_tyre_r"></div>
+      </div>
+      <div id="car_2" class="car">
+          <div class="f_glass"></div>
+          <div class="b_glass"></div>
+          <div class="f_light_l"></div>
+          <div class="f_light_r"></div>
+          <div class="f_tyre_l"></div>
+          <div class="f_tyre_r"></div>
+          <div class="b_tyre_l"></div>
+          <div class="b_tyre_r"></div>
+      </div>
+      <div id="car_3" class="car">
+          <div class="f_glass"></div>
+          <div class="b_glass"></div>
+          <div class="f_light_l"></div>
+          <div class="f_light_r"></div>
+          <div class="f_tyre_l"></div>
+          <div class="f_tyre_r"></div>
+          <div class="b_tyre_l"></div>
+          <div class="b_tyre_r"></div>
+      </div>
+      <div id="restart_div">
+          <button id="restart">
+              Restart<br>
+              <small class="small_text">(press Enter)</small>
+          </button>
+      </div>
+  </div>
+  <div id="donate">
+      <p>Link to the tutorial: <a target="_blank" href="https://goo.gl/RNFT7F">https://goo.gl/RNFT7F</a></p>
+      <p>Want to buy me a coffee? <br>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="XW2U9PJMKD464">
+              <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+          </form>
+      </p>
+  </div>
 
-          
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="jquery.min.js"></script>
+        <script src="script.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
